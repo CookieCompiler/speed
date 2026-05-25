@@ -14,16 +14,22 @@ Roadmap:
  * Динамическая настройка скорости чтения (WPM) горячими клавишами без перезапуска.
  * Навигация по тексту: пауза, перемотка назад/вперед, переход по главам.
 ## Установка
-Для сборки потребуется установленный cargo.git clone https://github.com/CookieCompiler/speed.git
+Для сборки потребуется установленный cargo.
+```bash
+git clone https://github.com/CookieCompiler/speed.git
 cd speed
 cargo build --release
-
+```
 Исполняемый файл будет скомпилирован в директорию target/release/speed.
 ## Использование
-Передайте путь к файлу в качестве аргумента (поддержка формата .epub находится в активной разработке):speed path/to/book.txt
-
-Или:speed path/to/book.epub
-
+Передайте путь к файлу в качестве аргумента (поддержка формата .epub находится в активной разработке):
+```
+speed path/to/book.txt
+```
+Или:
+```bash
+speed path/to/book.epub
+```
 ### Управление
  * Space — пауза
  * q — выход
